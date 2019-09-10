@@ -9,10 +9,10 @@ class MyAppDrawer extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Drawer(
-      child: Column(
+      child: ListView(
         children: <Widget>[
           UserAccountsDrawerHeader(
-            currentAccountPicture: Image.asset('images/profile_pic.jpg'),
+            currentAccountPicture: CircleAvatar(child: Image.asset('images/profile_pic.jpg'),),
             accountName: Text('Prince Boateng Asare'),
             accountEmail: Text('maprincegee@protonmail.com'),
           ),
